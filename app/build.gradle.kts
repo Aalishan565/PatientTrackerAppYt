@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("kotlin-kapt")
 }
 
 android {
@@ -66,4 +67,24 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+
+
+    // Compose dependencies
+    implementation ("androidx.navigation:navigation-compose:2.5.3")
+
+    //Room
+    implementation ( "androidx.room:room-runtime:2.5.0")
+            implementation ( "androidx.room:room-ktx:2.5.0")
+    kapt ("androidx.room:room-compiler:2.5.0")
+
+    // Dagger - Hilt
+    implementation ("com.google.dagger:hilt-android:2.44.2")
+    kapt ("com.google.dagger:hilt-android-compiler:2.44")
+    kapt ("androidx.hilt:hilt-compiler:1.0.0")
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
+    //System Ui Color
+    implementation ("com.google.accompanist:accompanist-systemuicontroller:0.29.1-alpha")
+
+
 }
