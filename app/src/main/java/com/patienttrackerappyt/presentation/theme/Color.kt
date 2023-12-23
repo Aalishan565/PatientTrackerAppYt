@@ -1,4 +1,4 @@
-package com.patienttrackerappyt.ui.theme
+package com.patienttrackerappyt.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
